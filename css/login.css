@@ -1,0 +1,71 @@
+/* Login Page Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #003366, #001278); /* Gradient background */
+  color: #fff; /* White text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form button {
+  background: #ffcc00; /* Yellow button */
+  color: #003366; /* Dark blue text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #e6b800; /* Darker yellow on hover */
+}
+
+p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+a {
+  color: #ffcc00; /* Yellow link */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

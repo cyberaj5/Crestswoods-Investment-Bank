@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Crestwoods</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-content" style="display: flex; align-items: center; justify-content: space-between;">
+      <div class="logo" style="display: flex; align-items: center;">
+      <img src="img/crestwoods logo.png" alt="" class="logo-img" style="width: 50px; height: auto; border-radius: 50%; margin-right: 10px;">
+      <span class="logo-text">Crestwoods</span>
+      </div>
+      <div class="profile" style="display: flex; align-items: center;">
+      <img src="img/download.png" alt="Profile Image" class="profile-img" style="width: 50px; height: auto; border-radius: 50%;">
+      </div>
+    </div>
+</header>
+
+  <!-- Dashboard Content -->
+  <section class="dashboard">
+    <div class="container">
+      <h1>Hi, <span id="clientName"></span></h1>
+
+      <!-- Account Information -->
+      <div class="account-info">
+        <div class="account-slider">
+          <!-- Checkings Slide -->
+          <div class="slide active" id="checkingsSlide">
+            <h2>Checkings</h2>
+            <p>Balance: $<span id="checkingsBalance">55,000.00</span></p>
+            <p>Account Number: <span id="checkingsAccountNumber">239005363464</span></p>
+          </div>
+          <!-- Savings Slide -->
+          <div class="slide" id="savingsSlide">
+            <h2>Savings</h2>
+            <p>Balance: $<span id="savingsBalance">8,300.00</span></p>
+            <p>Account Number: <span id="savingsAccountNumber">239005363465</span></p>
+          </div>
+        </div>
+        <!-- Navigation Buttons -->
+        <div class="slider-nav">
+          <button id="prevButton"><i class="fas fa-chevron-left"></i></button>
+          <button id="nextButton"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+
+      <!-- Menu Options -->
+      <div class="menu-options">
+        <div class="grid">
+          <a href="transactions.html">
+            <i class="fas fa-history"></i>
+            <span>Transaction History</span>
+          </a>
+          <a href="transfer.html">
+            <i class="fas fa-exchange-alt"></i>
+            <span>Make a Transfer</span>
+          </a>
+          <a href="order-card.html">
+            <i class="fas fa-credit-card"></i>
+            <span>Order Card</span>
+          </a>
+          <a href="card-deposit.html">
+            <i class="fas fa-money-check-alt"></i>
+            <span>Card Deposit</span>
+          </a>
+          <a href="crypto-deposit.html">
+            <i class="fab fa-bitcoin"></i>
+            <span>Crypto Deposit</span>
+          </a>
+          <a href="check-deposit.html">
+            <i class="fas fa-check-circle"></i>
+            <span>Check Deposit</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom Navigation -->
+  <div class="bottom-nav">
+    <a href="settings.html">
+      <i class="fas fa-cog"></i>
+      <span>Settings</span>
+    </a>
+    <a href="notifications.html">
+      <i class="fas fa-bell"></i>
+      <span>Notifications</span>
+    </a>
+    <a href="index.html" class="active">
+      <i class="fas fa-home"></i>
+      <span>Home</span>
+    </a>
+    <a href="support.html">
+      <i class="fas fa-headset"></i>
+      <span>Support</span>
+    </a>
+    <a href="login.html" id="logoutButton">
+      <i class="fas fa-sign-out-alt"></i>
+      <span>Logout</span>
+    </a>
+  </div>
+
+  <!-- Link to JavaScript -->
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

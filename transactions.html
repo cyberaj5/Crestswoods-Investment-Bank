@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaction History - Crestwoods</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-content" style="display: flex; align-items: center; justify-content: space-between;">
+      <div class="logo" style="display: flex; align-items: center;">
+      <img src="img/crestwoods logo.png" alt="" class="logo-img" style="width: 50px; height: auto; border-radius: 50%; margin-right: 10px;">
+      <span class="logo-text">Crestwoods</span>
+      </div>
+      <div class="profile" style="display: flex; align-items: center;">
+      <img src="img/download.png" alt="Profile Image" class="profile-img" style="width: 50px; height: auto; border-radius: 50%;">
+      </div>
+    </div>
+</header>
+
+  <!-- Transaction History Content -->
+  <section class="transactions">
+    <div class="container">
+      <h1>Transaction History</h1>
+      <div class="transaction-list">
+        <div class="transaction-item">
+          <i class="fas fa-exchange-alt"></i>
+          <p>Transfer to John Doe</p>
+          <span class="amount">-$500.00</span>
+          <span class="time">2 hours ago</span>
+        </div>
+        <div class="transaction-item">
+          <i class="fas fa-money-check-alt"></i>
+          <p>Deposit from Salary</p>
+          <span class="amount">+$2,000.00</span>
+          <span class="time">1 day ago</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom Navigation -->
+  <div class="bottom-nav">
+    <a href="settings.html">
+      <i class="fas fa-cog"></i>
+      <span>Settings</span>
+    </a>
+    <a href="notifications.html">
+      <i class="fas fa-bell"></i>
+      <span>Notifications</span>
+    </a>
+    <a href="index.html">
+      <i class="fas fa-home"></i>
+      <span>Home</span>
+    </a>
+    <a href="support.html">
+      <i class="fas fa-headset"></i>
+      <span>Support</span>
+    </a>
+    <a href="login.html" id="logoutButton">
+      <i class="fas fa-sign-out-alt"></i>
+      <span>Logout</span>
+    </a>
+  </div>
+
+  <!-- Link to JavaScript -->
+  <script src="js/transactions.js"></script>
+</body>
+</html>

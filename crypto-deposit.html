@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crypto Deposit - Crestwoods</title>
+  <link rel="stylesheet" href="css/crypto-deposit.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-content" style="display: flex; align-items: center; justify-content: space-between;">
+      <div class="logo" style="display: flex; align-items: center;">
+      <img src="img/crestwoods logo.png" alt="" class="logo-img" style="width: 50px; height: auto; border-radius: 50%; margin-right: 10px;">
+      <span class="logo-text">Crestwoods</span>
+      </div>
+      <div class="profile" style="display: flex; align-items: center;">
+      <img src="img/download.png" alt="Profile Image" class="profile-img" style="width: 50px; height: auto; border-radius: 50%;">
+      </div>
+    </div>
+</header>
+
+  <!-- Crypto Deposit Content -->
+  <section class="crypto-deposit">
+    <div class="container">
+      <h1>Crypto Deposit</h1>
+      <form id="cryptoDepositForm">
+        <label for="cryptoType">Cryptocurrency</label>
+        <select id="cryptoType" required>
+          <option value="bitcoin">Bitcoin (BTC)</option>
+          <option value="ethereum">Ethereum (ETH)</option>
+          <option value="litecoin">Litecoin (LTC)</option>
+        </select>
+
+        <label for="walletAddress">Wallet Address</label>
+        <input type="text" id="walletAddress" placeholder="Enter wallet address" required>
+
+        <label for="amount">Amount</label>
+        <input type="number" id="amount" placeholder="Enter amount" required>
+
+        <button type="submit">Deposit</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Bottom Navigation -->
+  <div class="bottom-nav">
+    <a href="settings.html">
+      <i class="fas fa-cog"></i>
+      <span>Settings</span>
+    </a>
+    <a href="notifications.html">
+      <i class="fas fa-bell"></i>
+      <span>Notifications</span>
+    </a>
+    <a href="index.html">
+      <i class="fas fa-home"></i>
+      <span>Home</span>
+    </a>
+    <a href="support.html">
+      <i class="fas fa-headset"></i>
+      <span>Support</span>
+    </a>
+    <a href="login.html" id="logoutButton">
+      <i class="fas fa-sign-out-alt"></i>
+      <span>Logout</span>
+    </a>
+  </div>
+
+  <!-- Link to JavaScript -->
+  <script src="js/crypto-deposit.js"></script>
+</body>
+</html>

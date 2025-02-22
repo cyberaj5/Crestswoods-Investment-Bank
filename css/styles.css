@@ -1,0 +1,302 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff; /* White background */
+    color: #003366; /* Blue text */
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    background: #ffffff; /* White background */
+    color: #003366; /* Blue text */
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  header .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #003366; /* Blue border */
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Login and Register Pages */
+  .login, .register {
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .login h1, .register h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #003366;
+  }
+  
+  .login form, .register form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .login label, .register label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #003366;
+  }
+  
+  .login input, .register input, .login select, .register select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .login button, .register button {
+    background: #003366; /* Blue background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .login button:hover, .register button:hover {
+    background: #004488; /* Darker blue on hover */
+  }
+  
+  .login p, .register p {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .login a, .register a {
+    color: #003366;
+    text-decoration: none;
+  }
+  
+  .login a:hover, .register a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Dashboard */
+  .dashboard {
+    padding: 40px 0;
+  }
+  
+  .dashboard h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #003366;
+  }
+  
+  .account-info {
+    background: #f9f9f9; /* Light gray background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+  }
+  
+  .account-slider {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateX(100%);
+  }
+  
+  .slide.active {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .slide.left {
+    transform: translateX(-100%);
+  }
+  
+  .slide h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #003366;
+  }
+  
+  .slide p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #666;
+  }
+  
+  .slider-nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .slider-nav button {
+    background: #003366; /* Blue background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .slider-nav button:hover {
+    background: #004488; /* Darker blue on hover */
+  }
+  
+  .menu-options {
+    margin: 20px 0;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+    gap: 20px;
+  }
+  
+  .menu-options a {
+    background: #003366; /* Blue background */
+    color: #fff; /* White text */
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .menu-options a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu-options a i {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .menu-options a span {
+    font-size: 14px;
+  }
+  
+  /* Bottom Navigation */
+  .bottom-nav {
+    background: #003366; /* Blue background */
+    padding: 15px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .bottom-nav a {
+    background: none;
+    border: none;
+    color: #ffffff; /* White text */
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+  }
+  
+  .bottom-nav a i {
+    font-size: 20px;
+  }
+  
+  .bottom-nav a.active {
+    color: #ffcc00; /* Yellow for active state */
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background: #121212; /* Dark background */
+    color: #ffffff; /* White text */
+  }
+  
+  body.dark-mode header {
+    background: #1e1e1e; /* Dark header */
+    color: #ffffff;
+  }
+  
+  body.dark-mode .settings-section {
+    background: #1e1e1e; /* Dark section background */
+    color: #ffffff;
+  }
+  
+  body.dark-mode .settings-section input,
+  body.dark-mode .settings-section select {
+    background: #333; /* Dark input background */
+    color: #fff; /* White input text */
+    border-color: #444; /* Dark border */
+  }
+  
+  body.dark-mode .settings-section button {
+    background: #004488; /* Darker blue for buttons */
+    color: #fff;
+  }
+  
+  body.dark-mode .bottom-nav {
+    background: #1e1e1e; /* Dark bottom navigation */
+  }
+  
+  body.dark-mode .bottom-nav a {
+    color: #ffffff; /* White text */
+  }
+  
+  body.dark-mode .bottom-nav a.active {
+    color: #ffcc00; /* Yellow for active state */
+  }
+
+
